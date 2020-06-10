@@ -13,20 +13,21 @@
 
     
 
-    <label for="exampleFormControlInput1">Nom</label>
+    <label for="nom">Nom</label>
     <input type="text" class="form-control" id="Insertnom" name="nom" placeholder="Nom" required>
-    <label for="exampleFormControlInput1">Prenom</label>
+    <label for="prenom">Prenom</label>
     <input type="text" class="form-control" id="Insertprenom" name="prenom" placeholder="Prenom" required>
-    <label for="exampleFormControlInput1">nomDeCompte</label>
+    <label for="nomDeCompte">nomDeCompte</label>
     <input type="text" class="form-control" id="InsertnomDeCompte" name="nomDeCompte" placeholder="nomDeCompte" required>
-    <label for="exampleFormControlSelect1">Role</label>
+    <label for="id_ROLE">Role</label>
+    <!-- TODO rendre l'affichage des options de roles cohérent avec la BdD -->
     <select class="form-control" name="id_ROLE" id="Insertid_ROLE" required>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
+        <option value=1>ADMIN</option>
+        <option value=2>UTILISATEUR</option>
+        <option value=3>COMMERCIAL</option>
 
     </select>
-    <label for="exampleFormControlInput1">Password</label>
+    <label for="motDePasse">Password</label>
     <input type="password" class="form-control" name="motDePasse" id="InsertmotDePasse" placeholder="ceci est le mot de passe" required>
     <input id="EnregistreLesDonnee" class="btn btn-success" type="submit" value=" Sauvegarder" />
 

@@ -13,7 +13,7 @@ namespace ServicesAtosFramework
 
         List<UserModel> GetUserList();
 
-        void UpdateUser(string nom, string prenom, string email, int role, string motDePasse);
+        void AddUser(string nom, string prenom, string email, int role, string motDePasse);
 
         void UpdateUser2(UTILISATEUR Utilisateur);
     }

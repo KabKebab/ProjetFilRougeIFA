@@ -33,7 +33,7 @@ namespace ServicesAtosFramework
 
         }
 
-        public void UpdateUser(string nom, string prenom, string email, int role, string motDePasse)
+        public void AddUser(string nom, string prenom, string email, int role, string motDePasse)
         {
            
 
