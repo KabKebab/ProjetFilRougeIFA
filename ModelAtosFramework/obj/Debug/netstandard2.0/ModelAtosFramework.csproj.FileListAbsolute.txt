@@ -1,0 +1,9 @@
+C:\Users\Utilisateur\Desktop\Atosfilsrouge\AtosFramework\ModelAtosFramework\bin\Debug\netstandard2.0\ModelAtosFramework.deps.json
+C:\Users\Utilisateur\Desktop\Atosfilsrouge\AtosFramework\ModelAtosFramework\bin\Debug\netstandard2.0\ModelAtosFramework.dll
+C:\Users\Utilisateur\Desktop\Atosfilsrouge\AtosFramework\ModelAtosFramework\bin\Debug\netstandard2.0\ModelAtosFramework.pdb
+C:\Users\Utilisateur\Desktop\Atosfilsrouge\AtosFramework\ModelAtosFramework\obj\Debug\netstandard2.0\ModelAtosFramework.csprojAssemblyReference.cache
+C:\Users\Utilisateur\Desktop\Atosfilsrouge\AtosFramework\ModelAtosFramework\obj\Debug\netstandard2.0\ModelAtosFramework.AssemblyInfoInputs.cache
+C:\Users\Utilisateur\Desktop\Atosfilsrouge\AtosFramework\ModelAtosFramework\obj\Debug\netstandard2.0\ModelAtosFramework.AssemblyInfo.cs
+C:\Users\Utilisateur\Desktop\Atosfilsrouge\AtosFramework\ModelAtosFramework\obj\Debug\netstandard2.0\ModelAtosFramework.csproj.CoreCompileInputs.cache
+C:\Users\Utilisateur\Desktop\Atosfilsrouge\AtosFramework\ModelAtosFramework\obj\Debug\netstandard2.0\ModelAtosFramework.dll
+C:\Users\Utilisateur\Desktop\Atosfilsrouge\AtosFramework\ModelAtosFramework\obj\Debug\netstandard2.0\ModelAtosFramework.pdb

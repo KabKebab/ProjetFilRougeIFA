@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Asx+vCwPswJViMY5apt+8fncddEPz9Z1M/JIJVDNBvXC5WRx0AhTJhDfZ0mgkG/LIwcFKrL62fdt9kSxaUNsFg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\KAB KEBAB\\AtosFramework\\ModelAtosFramework\\ModelAtosFramework.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\KAB KEBAB\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\KAB KEBAB\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

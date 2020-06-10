@@ -1,0 +1,15 @@
+C:\Users\Utilisateur\Desktop\Atosfilsrouge\AtosFramework\BDDAtosFramework\bin\Debug\BDDAtosFramework.dll.config
+C:\Users\Utilisateur\Desktop\Atosfilsrouge\AtosFramework\BDDAtosFramework\bin\Debug\BDDAtosFramework.dll
+C:\Users\Utilisateur\Desktop\Atosfilsrouge\AtosFramework\BDDAtosFramework\bin\Debug\BDDAtosFramework.pdb
+C:\Users\Utilisateur\Desktop\Atosfilsrouge\AtosFramework\BDDAtosFramework\bin\Debug\EntityFramework.dll
+C:\Users\Utilisateur\Desktop\Atosfilsrouge\AtosFramework\BDDAtosFramework\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Utilisateur\Desktop\Atosfilsrouge\AtosFramework\BDDAtosFramework\bin\Debug\EntityFramework.xml
+C:\Users\Utilisateur\Desktop\Atosfilsrouge\AtosFramework\BDDAtosFramework\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Utilisateur\Desktop\Atosfilsrouge\AtosFramework\BDDAtosFramework\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Utilisateur\Desktop\Atosfilsrouge\AtosFramework\BDDAtosFramework\obj\Debug\BDDAtosFramework.csprojAssemblyReference.cache
+C:\Users\Utilisateur\Desktop\Atosfilsrouge\AtosFramework\BDDAtosFramework\obj\Debug\BDDAtosFramework.csproj.CoreCompileInputs.cache
+C:\Users\Utilisateur\Desktop\Atosfilsrouge\AtosFramework\BDDAtosFramework\obj\Debug\BDDAtosFramework.csproj.CopyComplete
+C:\Users\Utilisateur\Desktop\Atosfilsrouge\AtosFramework\BDDAtosFramework\obj\Debug\BDDAtosFramework.dll
+C:\Users\Utilisateur\Desktop\Atosfilsrouge\AtosFramework\BDDAtosFramework\obj\Debug\BDDAtosFramework.pdb
+C:\Users\Utilisateur\Desktop\Atosfilsrouge\AtosFramework\BDDAtosFramework\bin\Debug\ModelAtosFramework.dll
+C:\Users\Utilisateur\Desktop\Atosfilsrouge\AtosFramework\BDDAtosFramework\bin\Debug\ModelAtosFramework.pdb
