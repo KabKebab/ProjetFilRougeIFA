@@ -78,5 +78,19 @@ namespace ServicesAtosFramework
             }
 
         }
+
+
+
+        public List<UserModel> SearchMultiple(UserModel user)
+        {
+            using (var dada = new Context())
+            {
+                var listUTILISATEUR = dada.UTILISATEUR.Select(u => new UserModel() { id = u.id, nomDeCompte = u.nomDeCompte, prenom = u.prenom, nom = u.nom, id_ROLE = u.id_ROLE, motDePasse = u.motDePasse }).Where((a) => a.nom == user.nom).AsQueryable();
+
+
+                return listUTILISATEUR.ToList();
+            }
+
+        }
     }
 }

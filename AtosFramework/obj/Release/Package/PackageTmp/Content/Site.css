@@ -1,0 +1,77 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #CDE5FA !important ;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #CDE5FA;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+#MenuGauche {
+    background-color: #0066a1;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+    border-color: #0046a1;
+    border-width: 3px;
+    border-style: solid;
+}
+
+
+.Utilisateur {
+    background-color: #0066a1;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top:5px;
+}
+
+.thead-dark {
+    background-color: #003351;
+}
+.nav-item {
+    margin: 5px;
+    text-decoration: none;
+    padding: 0px;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 1em;
+    color: #0066a1;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border: 2px solid #0046a1;
+    box-shadow: 3px 3px 12px #444444;
+    -webkit-box-shadow: 3px 3px 12px #444444;
+    -moz-box-shadow: 3px 3px 12px #444444;
+}
+.altrenance:nth-of-type(odd) {
+    background-color: #76C0FF !important;
+    color: #3C8AB7;
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: #CDE5FA;
+    color: black;
+}
+
+
+.UserAjax {
+    display: none;
+}
+#MenuUtilisateur {
+    display: none;
+}

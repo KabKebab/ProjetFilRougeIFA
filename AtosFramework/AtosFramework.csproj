@@ -133,6 +133,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\EditUser.cs" />
+    <Compile Include="Models\SearchUser.cs" />
     <Compile Include="Models\UpdateUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -177,14 +178,15 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Utilisateur\Index.cshtml" />
     <Content Include="Views\Utilisateur\ajouter.cshtml" />
-    <Content Include="Views\Utilisateur\EditModal.cshtml" />
     <Content Include="Views\Utilisateur\InsertionUtilisateur.cshtml" />
     <Content Include="Views\Utilisateur\MenuGauche.cshtml" />
     <Content Include="Views\Utilisateur\TableauUtilisateur.cshtml" />
     <Content Include="Views\Utilisateur\_Script.cshtml" />
-    <Content Include="Views\Utilisateur\InsertData.cshtml" />
     <Content Include="Views\Utilisateur\EnregistreEdit.cshtml" />
     <Content Include="Views\Utilisateur\essaisModal.cshtml" />
+    <Content Include="Views\Utilisateur\Recherche.cshtml" />
+    <Content Include="Views\Utilisateur\RechercheFiltre.cshtml" />
+    <Content Include="Views\Utilisateur\PartialRechercheFiltre.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -16,5 +16,7 @@ namespace ServicesAtosFramework
         void AddUser(string nom, string prenom, string email, int role, string motDePasse);
 
         void UpdateUser2(UTILISATEUR Utilisateur);
+
+        List<UserModel> SearchMultiple(UserModel user);
     }
 }

@@ -1,4 +1,5 @@
 ﻿
+using AtosFramework.Models;
 using BDDAtosFramework;
 using ModelAtosFramework;
 using ServicesAtosFramework;
@@ -20,6 +21,51 @@ namespace AtosFramework.Controllers
             var vm = Utilisateur.GetUserList();
             return View(vm);
 
+
+
+        }
+
+        public ActionResult RechercheFiltre(SearchUser searchuser)
+        {
+
+
+            //Console.WriteLine(user.nom);
+            //Console.WriteLine(user.prenom);
+            //Console.WriteLine(user.id_ROLE);
+            //Console.WriteLine(user.nomDeCompte);
+
+            //using (Context c = new Context())
+            //{
+            //    //10 personnes
+            //    var users = c.UTILISATEUR.Select(u => new UserModel() { id = user.id,   nomDeCompte = user.nomDeCompte, nom = user.nom, id_ROLE = user.id_ROLE}).AsQueryable();
+            //    if (!string.IsNullOrEmpty(user.nom))
+            //    {
+            //        // 5 personnes
+            //        users = users.Where(u => u.nom.Contains(user.nom)).AsQueryable();
+            //    }
+            //    if (!string.IsNullOrEmpty(user.nomDeCompte))
+            //    {
+            //        //2 personnes
+            //        users = users.Where(u => u.nomDeCompte.Contains(user.nomDeCompte)).AsQueryable();
+            //    }
+            //    if (!string.IsNullOrEmpty(user.id_ROLE.ToString()))
+            //    {
+            //        //2 personnes
+            //        users = users.Where(u => u.id_ROLE.ToString().Contains(user.id_ROLE.ToString())).AsQueryable();
+            //    }
+            //    return View("RechercheFiltre",users.ToList());
+            //}
+            UserModel userModel = new UserModel();
+            userModel.nom = searchuser.nom;
+           
+
+            IUserServices Utilisateur = new UserServices();
+            var vm = Utilisateur.SearchMultiple(userModel);
+
+
+
+
+         return  PartialView("RechercheFiltre", vm);
 
 
         }
@@ -52,6 +98,8 @@ namespace AtosFramework.Controllers
 
 
         }
+
+       
         public ActionResult EnregistreEdit(EditUser UpdateUser)
         {
 

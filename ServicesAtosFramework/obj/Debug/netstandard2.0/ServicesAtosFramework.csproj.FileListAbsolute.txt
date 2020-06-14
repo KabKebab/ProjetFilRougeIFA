@@ -28,3 +28,18 @@ C:\Users\KAB KEBAB\AtosFramework\ServicesAtosFramework\obj\Debug\netstandard2.0\
 C:\Users\KAB KEBAB\AtosFramework\ServicesAtosFramework\obj\Debug\netstandard2.0\ServicesAtosFramework.csproj.CopyComplete
 C:\Users\KAB KEBAB\AtosFramework\ServicesAtosFramework\obj\Debug\netstandard2.0\ServicesAtosFramework.dll
 C:\Users\KAB KEBAB\AtosFramework\ServicesAtosFramework\obj\Debug\netstandard2.0\ServicesAtosFramework.pdb
+C:\Users\Utilisateur\Source\Repos\ProjetFilRougeIFA\ServicesAtosFramework\bin\Debug\netstandard2.0\ServicesAtosFramework.deps.json
+C:\Users\Utilisateur\Source\Repos\ProjetFilRougeIFA\ServicesAtosFramework\bin\Debug\netstandard2.0\ServicesAtosFramework.dll
+C:\Users\Utilisateur\Source\Repos\ProjetFilRougeIFA\ServicesAtosFramework\bin\Debug\netstandard2.0\ServicesAtosFramework.pdb
+C:\Users\Utilisateur\Source\Repos\ProjetFilRougeIFA\ServicesAtosFramework\bin\Debug\netstandard2.0\BDDAtosFramework.dll
+C:\Users\Utilisateur\Source\Repos\ProjetFilRougeIFA\ServicesAtosFramework\bin\Debug\netstandard2.0\ModelAtosFramework.dll
+C:\Users\Utilisateur\Source\Repos\ProjetFilRougeIFA\ServicesAtosFramework\bin\Debug\netstandard2.0\BDDAtosFramework.pdb
+C:\Users\Utilisateur\Source\Repos\ProjetFilRougeIFA\ServicesAtosFramework\bin\Debug\netstandard2.0\BDDAtosFramework.dll.config
+C:\Users\Utilisateur\Source\Repos\ProjetFilRougeIFA\ServicesAtosFramework\bin\Debug\netstandard2.0\ModelAtosFramework.pdb
+C:\Users\Utilisateur\Source\Repos\ProjetFilRougeIFA\ServicesAtosFramework\obj\Debug\netstandard2.0\ServicesAtosFramework.csprojAssemblyReference.cache
+C:\Users\Utilisateur\Source\Repos\ProjetFilRougeIFA\ServicesAtosFramework\obj\Debug\netstandard2.0\ServicesAtosFramework.AssemblyInfoInputs.cache
+C:\Users\Utilisateur\Source\Repos\ProjetFilRougeIFA\ServicesAtosFramework\obj\Debug\netstandard2.0\ServicesAtosFramework.AssemblyInfo.cs
+C:\Users\Utilisateur\Source\Repos\ProjetFilRougeIFA\ServicesAtosFramework\obj\Debug\netstandard2.0\ServicesAtosFramework.csproj.CoreCompileInputs.cache
+C:\Users\Utilisateur\Source\Repos\ProjetFilRougeIFA\ServicesAtosFramework\obj\Debug\netstandard2.0\ServicesAtosFramework.csproj.CopyComplete
+C:\Users\Utilisateur\Source\Repos\ProjetFilRougeIFA\ServicesAtosFramework\obj\Debug\netstandard2.0\ServicesAtosFramework.dll
+C:\Users\Utilisateur\Source\Repos\ProjetFilRougeIFA\ServicesAtosFramework\obj\Debug\netstandard2.0\ServicesAtosFramework.pdb

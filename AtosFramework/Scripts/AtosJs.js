@@ -1,6 +1,3 @@
-$(document).ready(function () {
-    $('#tableauResultat').load('/Utilisateur/TableauUtilisateur');
-});
 
 $("#tomme").click(function () {
     $("#result").load("Utilisateur/index", function () {
@@ -78,5 +75,3 @@ $("#InsertionUser").click(function () {
 });
 
 
-
-   

@@ -1,0 +1,60 @@
+﻿<script>
+    /////////////////////////////// SECTION INSERT UTILISATEUR /////////////////////////////////////////
+    $(function () {
+        $('#EnregistreLesDonnee').on('click', function () {
+
+            var data = JSON.stringify(GetUserInsert());
+
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("InsertionUtilisateur", "Utilisateur")',
+                contentType: "application/json;",
+                data: data,
+                success: function (response) {
+
+                    $('#tableauResultat').load('/Utilisateur/TableauUtilisateur');
+
+
+
+                },
+                error: function (response) {
+
+                    $('#tableauResultat').load('/Utilisateur/TableauUtilisateur');
+
+
+                }
+            });
+
+
+        });
+
+    });
+
+    function GetUserInsert() {
+
+
+
+        var jsonObject = {
+
+            "nom": $("#Insertnom").val(),
+            "prenom": $("#Insertprenom").val(),
+            "nomDeCompte": $("#InsertnomDeCompte").val(),
+
+            "motDePasse": $("#InsertmotDePasse").val(),
+            "id_ROLE": $("#Insertid_ROLE").val(),
+        };
+        return jsonObject;
+    }
+
+
+    /////////////////////////////// FIN SECTION INSERT UTILISATEUR /////////////////////////////////////////
+
+
+
+    function MiseAjourDuTableau() {
+        $('#tableauResultat').load('/Utilisateur/TableauUtilisateur');
+
+    }
+
+    
+</script>
