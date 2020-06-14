@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\ServicesAtosFramework.csproj": {}
+    "C:\\Users\\modele\\source\\repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\ServicesAtosFramework.csproj": {}
   },
   "projects": {
-    "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj": {
+    "C:\\Users\\modele\\source\\repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj",
+        "projectUniqueName": "C:\\Users\\modele\\source\\repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj",
         "projectName": "BDDAtosFramework",
-        "projectPath": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj",
+        "projectPath": "C:\\Users\\modele\\source\\repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj": {
-                "projectPath": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj"
+              "C:\\Users\\modele\\source\\repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj": {
+                "projectPath": "C:\\Users\\modele\\source\\repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj"
               }
             }
           }
@@ -24,14 +24,14 @@
         "net472": {}
       }
     },
-    "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj": {
+    "C:\\Users\\modele\\source\\repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj",
+        "projectUniqueName": "C:\\Users\\modele\\source\\repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj",
         "projectName": "ModelAtosFramework",
-        "projectPath": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj",
+        "projectPath": "C:\\Users\\modele\\source\\repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj",
         "packagesPath": "C:\\Users\\modele\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\obj\\",
+        "outputPath": "C:\\Users\\modele\\source\\repos\\ProjetFilRougeIFA\\ModelAtosFramework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -83,14 +83,14 @@
         }
       }
     },
-    "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\ServicesAtosFramework.csproj": {
+    "C:\\Users\\modele\\source\\repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\ServicesAtosFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\ServicesAtosFramework.csproj",
+        "projectUniqueName": "C:\\Users\\modele\\source\\repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\ServicesAtosFramework.csproj",
         "projectName": "ServicesAtosFramework",
-        "projectPath": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\ServicesAtosFramework.csproj",
+        "projectPath": "C:\\Users\\modele\\source\\repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\ServicesAtosFramework.csproj",
         "packagesPath": "C:\\Users\\modele\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\obj\\",
+        "outputPath": "C:\\Users\\modele\\source\\repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -110,11 +110,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj": {
-                "projectPath": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj"
+              "C:\\Users\\modele\\source\\repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj": {
+                "projectPath": "C:\\Users\\modele\\source\\repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj"
               },
-              "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj": {
-                "projectPath": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj"
+              "C:\\Users\\modele\\source\\repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj": {
+                "projectPath": "C:\\Users\\modele\\source\\repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj"
               }
             }
           }
