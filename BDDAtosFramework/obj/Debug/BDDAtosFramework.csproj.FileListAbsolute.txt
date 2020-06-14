@@ -29,3 +29,18 @@ C:\Users\KAB KEBAB\AtosFramework\BDDAtosFramework\obj\Debug\BDDAtosFramework.csp
 C:\Users\KAB KEBAB\AtosFramework\BDDAtosFramework\obj\Debug\BDDAtosFramework.csproj.CopyComplete
 C:\Users\KAB KEBAB\AtosFramework\BDDAtosFramework\obj\Debug\BDDAtosFramework.dll
 C:\Users\KAB KEBAB\AtosFramework\BDDAtosFramework\obj\Debug\BDDAtosFramework.pdb
+C:\Users\modele\Source\Repos\ProjetFilRougeIFA\BDDAtosFramework\bin\Debug\BDDAtosFramework.dll.config
+C:\Users\modele\Source\Repos\ProjetFilRougeIFA\BDDAtosFramework\bin\Debug\BDDAtosFramework.dll
+C:\Users\modele\Source\Repos\ProjetFilRougeIFA\BDDAtosFramework\bin\Debug\BDDAtosFramework.pdb
+C:\Users\modele\Source\Repos\ProjetFilRougeIFA\BDDAtosFramework\bin\Debug\EntityFramework.dll
+C:\Users\modele\Source\Repos\ProjetFilRougeIFA\BDDAtosFramework\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\modele\Source\Repos\ProjetFilRougeIFA\BDDAtosFramework\bin\Debug\ModelAtosFramework.dll
+C:\Users\modele\Source\Repos\ProjetFilRougeIFA\BDDAtosFramework\bin\Debug\ModelAtosFramework.pdb
+C:\Users\modele\Source\Repos\ProjetFilRougeIFA\BDDAtosFramework\bin\Debug\EntityFramework.xml
+C:\Users\modele\Source\Repos\ProjetFilRougeIFA\BDDAtosFramework\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\modele\Source\Repos\ProjetFilRougeIFA\BDDAtosFramework\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\modele\Source\Repos\ProjetFilRougeIFA\BDDAtosFramework\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\modele\Source\Repos\ProjetFilRougeIFA\BDDAtosFramework\obj\Debug\BDDAtosFramework.csprojAssemblyReference.cache
+C:\Users\modele\Source\Repos\ProjetFilRougeIFA\BDDAtosFramework\obj\Debug\BDDAtosFramework.csproj.CopyComplete
+C:\Users\modele\Source\Repos\ProjetFilRougeIFA\BDDAtosFramework\obj\Debug\BDDAtosFramework.dll
+C:\Users\modele\Source\Repos\ProjetFilRougeIFA\BDDAtosFramework\obj\Debug\BDDAtosFramework.pdb

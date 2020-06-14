@@ -5,17 +5,11 @@ VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtosFramework", "AtosFramework\AtosFramework.csproj", "{DE1E06E4-62A6-4BEB-9C6C-2CA23A60C7B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelAtosFramework", "ModelAtosFramework\ModelAtosFramework.csproj", "{C706888C-4E02-45ED-8223-195227A768B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModelAtosFramework", "ModelAtosFramework\ModelAtosFramework.csproj", "{C706888C-4E02-45ED-8223-195227A768B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicesAtosFramework", "ServicesAtosFramework\ServicesAtosFramework.csproj", "{A2625011-F08B-4B40-A94C-420F2394D7A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServicesAtosFramework", "ServicesAtosFramework\ServicesAtosFramework.csproj", "{A2625011-F08B-4B40-A94C-420F2394D7A7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDDAtosFramework", "BDDAtosFramework\BDDAtosFramework.csproj", "{F123BD41-4DF3-43F5-8764-04D4D4C39584}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udemy2", "..\..\..\source\repos\Udemy2\Udemy2\Udemy2.csproj", "{7CB7A9C5-41E3-4899-A403-9D49A48C9F40}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebASP", "..\..\..\source\repos\WebASP\WebASP\WebASP.csproj", "{FA8895A3-ACC3-45E0-8792-8E7577AE19F1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebASPService", "..\..\..\source\repos\WebASP\WebASPService\WebASPService.csproj", "{1CBC387B-A17B-4FA0-833C-469D2E08C6FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,18 +33,6 @@ Global
 		{F123BD41-4DF3-43F5-8764-04D4D4C39584}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F123BD41-4DF3-43F5-8764-04D4D4C39584}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F123BD41-4DF3-43F5-8764-04D4D4C39584}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7CB7A9C5-41E3-4899-A403-9D49A48C9F40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7CB7A9C5-41E3-4899-A403-9D49A48C9F40}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7CB7A9C5-41E3-4899-A403-9D49A48C9F40}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7CB7A9C5-41E3-4899-A403-9D49A48C9F40}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FA8895A3-ACC3-45E0-8792-8E7577AE19F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FA8895A3-ACC3-45E0-8792-8E7577AE19F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FA8895A3-ACC3-45E0-8792-8E7577AE19F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FA8895A3-ACC3-45E0-8792-8E7577AE19F1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1CBC387B-A17B-4FA0-833C-469D2E08C6FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1CBC387B-A17B-4FA0-833C-469D2E08C6FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1CBC387B-A17B-4FA0-833C-469D2E08C6FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1CBC387B-A17B-4FA0-833C-469D2E08C6FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

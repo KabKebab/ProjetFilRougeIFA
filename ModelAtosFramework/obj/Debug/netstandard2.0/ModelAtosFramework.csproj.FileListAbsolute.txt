@@ -16,3 +16,11 @@ C:\Users\KAB KEBAB\AtosFramework\ModelAtosFramework\obj\Debug\netstandard2.0\Mod
 C:\Users\KAB KEBAB\AtosFramework\ModelAtosFramework\obj\Debug\netstandard2.0\ModelAtosFramework.AssemblyInfo.cs
 C:\Users\KAB KEBAB\AtosFramework\ModelAtosFramework\obj\Debug\netstandard2.0\ModelAtosFramework.dll
 C:\Users\KAB KEBAB\AtosFramework\ModelAtosFramework\obj\Debug\netstandard2.0\ModelAtosFramework.pdb
+C:\Users\modele\Source\Repos\ProjetFilRougeIFA\ModelAtosFramework\bin\Debug\netstandard2.0\ModelAtosFramework.deps.json
+C:\Users\modele\Source\Repos\ProjetFilRougeIFA\ModelAtosFramework\bin\Debug\netstandard2.0\ModelAtosFramework.dll
+C:\Users\modele\Source\Repos\ProjetFilRougeIFA\ModelAtosFramework\bin\Debug\netstandard2.0\ModelAtosFramework.pdb
+C:\Users\modele\Source\Repos\ProjetFilRougeIFA\ModelAtosFramework\obj\Debug\netstandard2.0\ModelAtosFramework.csprojAssemblyReference.cache
+C:\Users\modele\Source\Repos\ProjetFilRougeIFA\ModelAtosFramework\obj\Debug\netstandard2.0\ModelAtosFramework.AssemblyInfoInputs.cache
+C:\Users\modele\Source\Repos\ProjetFilRougeIFA\ModelAtosFramework\obj\Debug\netstandard2.0\ModelAtosFramework.AssemblyInfo.cs
+C:\Users\modele\Source\Repos\ProjetFilRougeIFA\ModelAtosFramework\obj\Debug\netstandard2.0\ModelAtosFramework.dll
+C:\Users\modele\Source\Repos\ProjetFilRougeIFA\ModelAtosFramework\obj\Debug\netstandard2.0\ModelAtosFramework.pdb

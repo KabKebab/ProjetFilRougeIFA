@@ -1,19 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\ServicesAtosFramework.csproj": {}
+    "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\ServicesAtosFramework.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj": {
+    "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj": {
+      "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj",
+        "projectUniqueName": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj",
         "projectName": "BDDAtosFramework",
-        "projectPath": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj",
+        "projectPath": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj": {
-                "projectPath": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj"
+              "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj": {
+                "projectPath": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj"
               }
             }
           }
@@ -23,20 +24,20 @@
         "net472": {}
       }
     },
-    "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj": {
+    "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj",
+        "projectUniqueName": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj",
         "projectName": "ModelAtosFramework",
-        "projectPath": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj",
-        "packagesPath": "C:\\Users\\Utilisateur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\obj\\",
+        "projectPath": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj",
+        "packagesPath": "C:\\Users\\modele\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Utilisateur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\modele\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -78,24 +79,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\ServicesAtosFramework.csproj": {
+    "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\ServicesAtosFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\ServicesAtosFramework.csproj",
+        "projectUniqueName": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\ServicesAtosFramework.csproj",
         "projectName": "ServicesAtosFramework",
-        "projectPath": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\ServicesAtosFramework.csproj",
-        "packagesPath": "C:\\Users\\Utilisateur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\obj\\",
+        "projectPath": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\ServicesAtosFramework.csproj",
+        "packagesPath": "C:\\Users\\modele\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Utilisateur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\modele\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -109,11 +110,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj": {
-                "projectPath": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj"
+              "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj": {
+                "projectPath": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj"
               },
-              "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj": {
-                "projectPath": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj"
+              "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj": {
+                "projectPath": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj"
               }
             }
           }
@@ -148,7 +149,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
