@@ -108,21 +108,11 @@
             <div class="modal-body">
 
                 <input type="text" class="form-control" id="identification" name="identification" placeholder="identification" value="" required>
-                <label for="exampleFormControlInput1">Nom</label>
-                <input type="text" class="form-control" id="nom" name="nom" placeholder="Nom" value="" required>
-                <label for="exampleFormControlInput1">Prenom</label>
-                <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Prenom" value="" required>
-                <label for="exampleFormControlInput1">nomDeCompte</label>
-                <input type="text" class="form-control" id="nomDeCompte" name="nomDeCompte" placeholder="nomDeCompte" value="" required>
-                <label for="exampleFormControlSelect1">Role</label>
-                <select class="form-control" name="id_ROLE" id="id_ROLE" value="" required>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-
-                </select>
-                <label for="exampleFormControlInput1">Password</label>
-                <input type="password" class="form-control" name="motDePasse" id="motDePasse" value="motDePasse" placeholder="ceci est le mot de passe" required>
+                <label for="exampleFormControlInput1">	Intitulé	</label>
+                <input type="text" class="form-control" id="Intitule" name="Intitule" placeholder="Intitule" value="" required>
+                <label for="exampleFormControlInput1">Type</label>
+                <input type="text" class="form-control" id="Type" name="Type" placeholder="Type" value="" required>
+                
                 <button id="UserChangeEdit" class="btn btn-success  " type="submit" value=" Sauvegarder">Sauvegarder</button>
 
 
@@ -147,11 +137,9 @@
 
             });
             $('#identification').val(myArr[0]);
-            $('#nom').val(myArr[1]);
-            $('#prenom').val(myArr[2]);
-            $('#nomDeCompte').val(myArr[3]);
-            $('#id_ROLE').val(myArr[4]);
-            $('#motDePasse').val(myArr[5]);
+            $('#Intitule').val(myArr[1]);
+            $('#Type').val(myArr[2]);
+           
         });
 
          $(function () {
@@ -191,11 +179,9 @@
         //alert($('#identification').val() + ' ' + $('#nom').val() + ' ' + $('#prenom').val()+' ' + $('#nomDeCompte').val() + ' ' + $('#motDePasse').val() + ' ' + $('#id_ROLE').val() );
         var jsonObject = {
             "ididentification": $('#identification').val(),
-            "nom": $('#nom').val(),
-            "prenom": $('#prenom').val(),
-            "nomDeCompte": $('#nomDeCompte').val(),
-            "motDePasse": $('#motDePasse').val(),
-            "id_ROLE": $('#id_ROLE').val()
+            "Intitule": $('#Intitule').val(),
+            "Type": $('#Type').val(),
+            
         };
         return jsonObject;
     }
