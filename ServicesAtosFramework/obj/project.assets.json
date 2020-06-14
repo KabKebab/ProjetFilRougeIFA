@@ -262,11 +262,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\modele\\source\\repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\ServicesAtosFramework.csproj",
+      "projectUniqueName": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\ServicesAtosFramework.csproj",
       "projectName": "ServicesAtosFramework",
-      "projectPath": "C:\\Users\\modele\\source\\repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\ServicesAtosFramework.csproj",
+      "projectPath": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\ServicesAtosFramework.csproj",
       "packagesPath": "C:\\Users\\modele\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\modele\\source\\repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\obj\\",
+      "outputPath": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -286,11 +286,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\modele\\source\\repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj": {
-              "projectPath": "C:\\Users\\modele\\source\\repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj"
+            "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj": {
+              "projectPath": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj"
             },
-            "C:\\Users\\modele\\source\\repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj": {
-              "projectPath": "C:\\Users\\modele\\source\\repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj"
+            "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj": {
+              "projectPath": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj"
             }
           }
         }
