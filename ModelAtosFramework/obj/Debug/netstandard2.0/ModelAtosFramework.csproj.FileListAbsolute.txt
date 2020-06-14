@@ -32,3 +32,4 @@ C:\Users\Utilisateur\Source\Repos\ProjetFilRougeIFA2\ModelAtosFramework\obj\Debu
 C:\Users\Utilisateur\Source\Repos\ProjetFilRougeIFA2\ModelAtosFramework\obj\Debug\netstandard2.0\ModelAtosFramework.csproj.CoreCompileInputs.cache
 C:\Users\Utilisateur\Source\Repos\ProjetFilRougeIFA2\ModelAtosFramework\obj\Debug\netstandard2.0\ModelAtosFramework.dll
 C:\Users\Utilisateur\Source\Repos\ProjetFilRougeIFA2\ModelAtosFramework\obj\Debug\netstandard2.0\ModelAtosFramework.pdb
+C:\Users\Utilisateur\Source\Repos\ProjetFilRougeIFA2\ModelAtosFramework\obj\Debug\netstandard2.0\ModelAtosFramework.csprojAssemblyReference.cache

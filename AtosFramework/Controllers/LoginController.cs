@@ -35,21 +35,22 @@ namespace AtosFramework.Controllers
             {
                 //// je rempli l'objet de ma DAL
                 UserModel userModel = new UserModel();
+                Console.WriteLine(loginModel.LoginUtilisateur);
                 userModel.nomDeCompte = loginModel.LoginUtilisateur;
                 userModel.motDePasse = loginModel.LoginMotDePasse;
                 //userModel.Role = DBModel.Roles.Client;
-                // J'instancie le service
+                // J'instencie le service
                 IUserServices userService = new UserServices();
 
                 if (userService.UserExist(userModel))
                 {
                     // je vais chercher en db les infos de cet utilisateur
 
-                    var userInfos= userService.GetUser(userModel);
-                    userModel.id_ROLE= userInfos.id_ROLE;
+                    var userInfos = userService.GetUser(userModel);
+                    userModel.id_ROLE = userInfos.id_ROLE;
                     // Je crée un coockie d'authent du nom .ASPXAUTH
                     //System.Web.Security.FormsAuthentication.SetAuthCookie(loginModel.LoginEmail, true);
-                    
+
                     var objectJson = JsonConvert.SerializeObject(userModel);
                     FormsAuthenticationTicket ticket = new FormsAuthenticationTicket(1, Constantes.Authent, DateTime.Now,
                                                             DateTime.Now.AddMinutes(30),
@@ -63,14 +64,18 @@ namespace AtosFramework.Controllers
                                                     FormsAuthentication.Encrypt(ticket)
                                                 )
                                             );
-                                       
+
+                    //Session["User"] = loginModel.LoginEmail;
+                    //Session["test"] = "Cou";
+                    // Manually add the authCookie to the Cookies collection
+                    //response
                     return new JsonResult { Data = true, JsonRequestBehavior = JsonRequestBehavior.AllowGet };
                 }
-                return View();
+                return new JsonResult { Data = false, JsonRequestBehavior = JsonRequestBehavior.AllowGet };
 
             }
             else
-                return View();
+                return new JsonResult { Data = false, JsonRequestBehavior = JsonRequestBehavior.AllowGet };
 
         }
 

@@ -193,7 +193,6 @@
     <Content Include="Views\Utilisateur\essaisModal.cshtml" />
     <Content Include="Views\Competence\MenuGauche.cshtml" />
     <Content Include="Views\Competence\TableauCompetences.cshtml" />
-    <Content Include="Views\Login\Ident.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Login\_Script.cshtml" />
     <Content Include="Views\Competence\Index.cshtml" />

@@ -9,7 +9,7 @@ namespace AtosFramework.Controllers
 {
     public class CompetenceController : Controller
     {
-        // GET: Competence
+        [AuthorizeCustom(Roles = "1")]
         public ActionResult Index()
         {
 

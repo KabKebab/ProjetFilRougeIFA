@@ -14,6 +14,9 @@ namespace AtosFramework.Controllers
 {
     public class UtilisateurController : Controller
     {
+
+
+        [AuthorizeCustom]
         // GET: Utilisateur
         public ActionResult Index()
         {
