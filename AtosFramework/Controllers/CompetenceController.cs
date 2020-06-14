@@ -12,7 +12,10 @@ namespace AtosFramework.Controllers
         // GET: Competence
         public ActionResult Index()
         {
-            return View();
+
+            ICompetenceService listCompetences = new CompetenceService();
+            var vm = listCompetences.GetCompetenceList();
+            return View(vm);
         }
         public ActionResult TableauCompetences()
         {

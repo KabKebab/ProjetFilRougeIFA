@@ -1,3 +1,10 @@
+$(function () {
+    $('#tableauResultat').load('/Utilisateur/TableauUtilisateur');
+    $('#TableauCompetences').load('/Competences/TableauCompetences');
+    
+});
+
+
 
 $("#tomme").click(function () {
     $("#result").load("Utilisateur/index", function () {

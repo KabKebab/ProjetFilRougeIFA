@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="form-group">
+    <label for="exampleInputEmail1">Login</label>
+    <input type="email" class="form-control" id="LoginUtilisateur" aria-describedby="emailHelp" placeholder="Enter Nom De Compte">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+</div>
+<div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="LoginMotDePasse" placeholder="Password">
+</div>
+
+<button type="submit" id="SaveLogin" class="btn btn-primary">Submit</button>
+
+
+@Html.Partial("_Script")

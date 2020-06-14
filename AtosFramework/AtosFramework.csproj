@@ -124,16 +124,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\AuthorizeCustom.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\Constantes.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CompetenceController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\UtilisateurController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\EditUser.cs" />
+    <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\SearchUser.cs" />
     <Compile Include="Models\UpdateUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -188,6 +193,11 @@
     <Content Include="Views\Utilisateur\essaisModal.cshtml" />
     <Content Include="Views\Competence\MenuGauche.cshtml" />
     <Content Include="Views\Competence\TableauCompetences.cshtml" />
+    <Content Include="Views\Login\Ident.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Login\_Script.cshtml" />
+    <Content Include="Views\Competence\Index.cshtml" />
+    <Content Include="Views\Competence\_Script.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

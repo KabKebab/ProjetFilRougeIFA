@@ -92,5 +92,48 @@ namespace ServicesAtosFramework
             }
 
         }
+
+
+        public bool UserExist(UserModel utilisateur)
+        {
+            using (Context c = new Context())
+            {
+                var test = c.UTILISATEUR.Any(u => u.nomDeCompte == utilisateur.nomDeCompte && u.motDePasse == utilisateur.motDePasse);
+                return test;
+            }
+
+
+
+        }
+
+        public UserModel GetUser(UserModel user)
+        {
+            if (user.id != 0)
+            {
+
+                using (Context c = new Context())
+                {
+                    var getuser = c.UTILISATEUR.Where(u => u.id == user.id).Select(p => new UserModel { id = p.id, nom = p.nom, prenom = p.prenom }).FirstOrDefault();
+                    return getuser;
+
+                }
+            }
+            if (!string.IsNullOrEmpty(user.nom))
+            {
+                using (Context c = new Context())
+                {
+                    var getuser = c.UTILISATEUR.Where(u => u.nom == user.nom).Select(p => new UserModel { id = p.id, nom = p.nom, prenom = p.prenom, id_ROLE = p.id_ROLE }).FirstOrDefault();
+                    return getuser;
+
+                }
+            }
+            else
+                using (Context c = new Context())
+                {
+                    var getuser = c.UTILISATEUR.Select(p => new UserModel { id = p.id, nom = p.nom, prenom = p.prenom, id_ROLE = p.id_ROLE }).FirstOrDefault();
+                    return getuser;
+
+                }
+        }
     }
 }

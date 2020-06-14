@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj": {}
+    "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA2\\ModelAtosFramework\\ModelAtosFramework.csproj": {}
   },
   "projects": {
-    "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj": {
+    "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA2\\ModelAtosFramework\\ModelAtosFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj",
+        "projectUniqueName": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA2\\ModelAtosFramework\\ModelAtosFramework.csproj",
         "projectName": "ModelAtosFramework",
-        "projectPath": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj",
-        "packagesPath": "C:\\Users\\modele\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\modele\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\obj\\",
+        "projectPath": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA2\\ModelAtosFramework\\ModelAtosFramework.csproj",
+        "packagesPath": "C:\\Users\\Utilisateur\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA2\\ModelAtosFramework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\modele\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Utilisateur\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -59,7 +59,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LGmtxe/RUi4YoGcyTJ/1IQiuFCN7diVUwZtofo8UPPs0N9KvMSfHAgzv8n+JDfJ4UXxCiEvZcigMkU7QMaf/rA==",
+  "dgSpecHash": "YykLAaeOPViMSyqHv0PsfNrxKuK9SqbjsipgbIpP2FRqegmRQ+VyhRadjHrIQ//kmwiaICzlggUVMa4mwPsBAw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\ServicesAtosFramework.csproj",
+  "projectFilePath": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA2\\ServicesAtosFramework\\ServicesAtosFramework.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Utilisateur\\.nuget\\packages\\entityframework\\6.2.0\\entityframework.6.2.0.nupkg.sha512",
     "C:\\Users\\Utilisateur\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

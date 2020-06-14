@@ -18,5 +18,9 @@ namespace ServicesAtosFramework
         void UpdateUser2(UTILISATEUR Utilisateur);
 
         List<UserModel> SearchMultiple(UserModel user);
+
+        bool UserExist(UserModel utilisateur);
+
+        UserModel GetUser(UserModel user);
     }
 }
