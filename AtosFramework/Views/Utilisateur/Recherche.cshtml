@@ -2,16 +2,16 @@
 @{
     ViewBag.Title = "RechercheFiltre";
 }
-
-<h2>Recherche</h2>
-<input id="searchelment0" class="form-control" type="text" placeholder="Recherche par ID">
-<input id="searchelment1" class="form-control" type="text" placeholder="Recherche par nom">
-<input id="searchelment2" class="form-control" type="text" placeholder="Recherche par prenom">
-<input id="searchelment3" class="form-control" type="text" placeholder="Recherche par nomDeCompte">
-<input id="searchelment4" class="form-control" type="text" placeholder="Recherche par Role">
-<button id="SubmitBouttonRecherche"  class="btn btn-success">Rechercher</button>
-
-<script>
+    <div id="Recherche">
+        <h2>Recherche</h2>
+        <input id="searchelment0" class="form-control rechercheBoutton" type="text" placeholder="Recherche par ID">
+        <input id="searchelment1" class="form-control rechercheBoutton" type="text" placeholder="Recherche par nom">
+        <input id="searchelment2" class="form-control rechercheBoutton" type="text" placeholder="Recherche par prenom">
+        <input id="searchelment3" class="form-control rechercheBoutton" type="text" placeholder="Recherche par nomDeCompte">
+        <input id="searchelment4" class="form-control rechercheBoutton" type="text" placeholder="Recherche par Role">
+        <button id="SubmitBouttonRecherche" class="btn btn-success">Rechercher</button>
+</div>
+        <script>
 
  $(function () {
         $('#SubmitBouttonRecherche').on('click', function () {
@@ -26,13 +26,13 @@
                 success: function (response) {
 
                     $('#tableauResultat').load('/Utilisateur/RechercheFiltre');
-                    //alert($("#searchelment1").val());
+                    alert("reussi");
 
 
                 },
                 error: function (response) {
 
-                   
+
                     alert("false");
 
                 }
@@ -50,9 +50,9 @@
 
 
         var jsonObject = {
-            
+
             "nom":"DALUZ"
-           
+
 
 
         };
@@ -61,4 +61,4 @@
 
 
 
-</script>
+        </script>

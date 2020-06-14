@@ -16,7 +16,7 @@ namespace AtosFramework.Controllers
     {
 
 
-        [AuthorizeCustom]
+        [AuthorizeCustom (Roles = "1")]
         // GET: Utilisateur
         public ActionResult Index()
         {
@@ -32,35 +32,10 @@ namespace AtosFramework.Controllers
         {
 
 
-            //Console.WriteLine(user.nom);
-            //Console.WriteLine(user.prenom);
-            //Console.WriteLine(user.id_ROLE);
-            //Console.WriteLine(user.nomDeCompte);
-
-            //using (Context c = new Context())
-            //{
-            //    //10 personnes
-            //    var users = c.UTILISATEUR.Select(u => new UserModel() { id = user.id,   nomDeCompte = user.nomDeCompte, nom = user.nom, id_ROLE = user.id_ROLE}).AsQueryable();
-            //    if (!string.IsNullOrEmpty(user.nom))
-            //    {
-            //        // 5 personnes
-            //        users = users.Where(u => u.nom.Contains(user.nom)).AsQueryable();
-            //    }
-            //    if (!string.IsNullOrEmpty(user.nomDeCompte))
-            //    {
-            //        //2 personnes
-            //        users = users.Where(u => u.nomDeCompte.Contains(user.nomDeCompte)).AsQueryable();
-            //    }
-            //    if (!string.IsNullOrEmpty(user.id_ROLE.ToString()))
-            //    {
-            //        //2 personnes
-            //        users = users.Where(u => u.id_ROLE.ToString().Contains(user.id_ROLE.ToString())).AsQueryable();
-            //    }
-            //    return View("RechercheFiltre",users.ToList());
-            //}
+           
             UserModel userModel = new UserModel();
             userModel.nom = searchuser.nom;
-           
+            Console.WriteLine(searchuser.nom);
 
             IUserServices Utilisateur = new UserServices();
             var vm = Utilisateur.SearchMultiple(userModel);
@@ -95,7 +70,6 @@ namespace AtosFramework.Controllers
                 c.SaveChanges();
             }
 
-           // return new JsonResult { Data = true, JsonRequestBehavior = JsonRequestBehavior.AllowGet };
 
             return View();
 

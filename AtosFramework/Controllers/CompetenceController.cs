@@ -9,7 +9,7 @@ namespace AtosFramework.Controllers
 {
     public class CompetenceController : Controller
     {
-        [AuthorizeCustom(Roles = "1")]
+        [AuthorizeCustom]
         public ActionResult Index()
         {
 
@@ -24,5 +24,6 @@ namespace AtosFramework.Controllers
            var vm = listCompetences.GetCompetenceList();
             return View(vm);
         }
+
     }
 }

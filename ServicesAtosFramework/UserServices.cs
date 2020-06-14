@@ -85,10 +85,10 @@ namespace ServicesAtosFramework
         {
             using (var dada = new Context())
             {
-                var listUTILISATEUR = dada.UTILISATEUR.Select(u => new UserModel() { id = u.id, nomDeCompte = u.nomDeCompte, prenom = u.prenom, nom = u.nom, id_ROLE = u.id_ROLE, motDePasse = u.motDePasse }).Where((a) => a.nom == user.nom).AsQueryable();
+                var listUTILISATEUR = dada.UTILISATEUR.Select(u => new UserModel() { id = u.id, nomDeCompte = u.nomDeCompte, prenom = u.prenom, nom = u.nom, id_ROLE = u.id_ROLE, motDePasse = u.motDePasse }).Where((a) => a.nom == user.nom ).AsQueryable();
+                var resultat = listUTILISATEUR.ToList();
 
-
-                return listUTILISATEUR.ToList();
+                return resultat;
             }
 
         }

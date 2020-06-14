@@ -3,16 +3,21 @@
 }
 
 
-<div class="form-group">
-    <label for="exampleInputEmail1">Login</label>
-    <input type="text" class="form-control" id="LoginUtilisateur" placeholder="Enter Nom De Compte">
-</div>
-<div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="LoginMotDePasse" placeholder="Password">
-</div>
 
-<button type="submit" id="SaveLogin" class="btn btn-primary">Submit</button>
+    <div class="col-lg-3 col-lg-offset-3 ">
+        <div><img src="~/Images/Atos login.png" class="img - rounded" alt="Logos Atos" /></div>
+        <div class="col-lg-offset-8 col-md-offset-3">
 
+            <div class="form-group">
+                <label for="exampleInputEmail1">Login</label>
+                <input type="text" class="form-control" id="LoginUtilisateur" placeholder="Enter Nom De Compte">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="LoginMotDePasse" placeholder="Password">
+            </div>
 
-@Html.Partial("_Script")
+            <button type="submit" id="SaveLogin" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+        @Html.Partial("_Script")

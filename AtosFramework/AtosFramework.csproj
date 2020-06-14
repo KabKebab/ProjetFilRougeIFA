@@ -197,6 +197,7 @@
     <Content Include="Views\Login\_Script.cshtml" />
     <Content Include="Views\Competence\Index.cshtml" />
     <Content Include="Views\Competence\_Script.cshtml" />
+    <Content Include="Views\Utilisateur\Recherche.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
