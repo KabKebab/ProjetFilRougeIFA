@@ -1,9 +1,10 @@
 $(function () {
     $('#tableauResultat').load('/Utilisateur/TableauUtilisateur');
-    $('#TableauCompetences').load('/Competences/TableauCompetences');
+   
     
 });
 
+$('#TableauCompetences').load('/Competence/TableauCompetences');
 
 
 $("#tomme").click(function () {

@@ -1,10 +1,4 @@
 ﻿
-@{
-    ViewBag.Title = "TableauCompetences";
-}
-
-
-
 
 
 
@@ -81,7 +75,7 @@
                         </div>*@
                 </td>
                 <td scope="col">
-                    @using (Html.BeginForm("supprimer", "Utilisateur", FormMethod.Post))
+                    @using (Html.BeginForm("suprimer", "Competence", FormMethod.Post))
                     {
 
 
@@ -109,10 +103,10 @@
 
                 <input type="text" class="form-control" id="identification" name="identification" placeholder="identification" value="" required>
                 <label for="exampleFormControlInput1">	Intitulé	</label>
-                <input type="text" class="form-control" id="Intitule" name="Intitule" placeholder="Intitule" value="" required>
+                <input type="text" class="form-control" id="intitule" name="Intitule" placeholder="Intitule" value="" required>
                 <label for="exampleFormControlInput1">Type</label>
                 <input type="text" class="form-control" id="Type" name="Type" placeholder="Type" value="" required>
-                
+
                 <button id="UserChangeEdit" class="btn btn-success  " type="submit" value=" Sauvegarder">Sauvegarder</button>
 
 
@@ -137,25 +131,25 @@
 
             });
             $('#identification').val(myArr[0]);
-            $('#Intitule').val(myArr[1]);
+            $('#intitule').val(myArr[1]);
             $('#Type').val(myArr[2]);
-           
+
         });
 
-         $(function () {
-        $('#UserChangeEdit').on('click', function () {
 
-            var data = JSON.stringify(GetUser());
+     $('#UserChangeEdit').on('click', function () {
+
+         var data = JSON.stringify(GetEditCompetence());
 
             $.ajax({
                 type: 'POST',
-                url: '@Url.Action("EnregistreEdit", "Utilisateur")',
+                url: '@Url.Action("ModifierCompetence", "Competence")',
                 contentType: "application/json;",
                 data: data,
                 success: function (response) {
 
-
-                    // alert('true');
+                    $('#TableauCompetences').load('/Competence/TableauCompetences');
+                    $('.modal').modal('hide');
                 },
                 error: function (response) {
 
@@ -163,27 +157,21 @@
                     alert('false');
                 }
             });
+     });
 
 
-            $('.modal').modal('hide');
-            setTimeout(() => { MiseAjourDuTableau() }, 500);
+         function GetEditCompetence() {
 
-        });
+             //alert($('#identification').val() + ' ' + $('#nom').val() + ' ' + $('#prenom').val()+' ' + $('#nomDeCompte').val() + ' ' + $('#motDePasse').val() + ' ' + $('#id_ROLE').val() );
+             var jsonObject = {
+             "id": $('#identification').val(),
+                 "intitule": $('#intitule').val(),
+                 "id_TYPE_COMPETENCE": $('#Type').val()
+             };
+             return jsonObject;
+         }
 
-         });
 
 
-
-    function GetUser() {
-
-        //alert($('#identification').val() + ' ' + $('#nom').val() + ' ' + $('#prenom').val()+' ' + $('#nomDeCompte').val() + ' ' + $('#motDePasse').val() + ' ' + $('#id_ROLE').val() );
-        var jsonObject = {
-            "ididentification": $('#identification').val(),
-            "Intitule": $('#Intitule').val(),
-            "Type": $('#Type').val(),
-            
-        };
-        return jsonObject;
-    }
 
 </script>

@@ -15,7 +15,7 @@ namespace AtosFramework.Controllers
             IUserServices Utilisateur = new UserServices();
             var vm = Utilisateur.GetUser();
             //return View(vm);
-            return RedirectToAction("Index", "Login");
+            return RedirectToAction("Index", "Competence");
         }
 
         public ActionResult About()
