@@ -53,17 +53,26 @@ namespace AtosFramework.Controllers
             return View();
         }
 
-        public ActionResult suprimer(int suprimer)
+        public ActionResult supprimer(int supprimer)
         {
             COMPETENCE listCOMPETENCE = new COMPETENCE();
-            using (var c = new Context())
-            {
-                listCOMPETENCE = c.COMPETENCE.Where((a) => a.id == suprimer).First();
+            try { 
+                using (var c = new Context())
+                {
+                    listCOMPETENCE = c.COMPETENCE.Where((a) => a.id == supprimer).First();
 
-                c.COMPETENCE.Remove(listCOMPETENCE);
-                c.SaveChanges();
+                    c.COMPETENCE.Remove(listCOMPETENCE);
+                    c.SaveChanges();
+                }
             }
+            catch(Exception)
+            {
 
+                RedirectToAction("Index", "Competence");
+
+
+
+            }
             return RedirectToAction("Index", "Competence"); ;
         }
 

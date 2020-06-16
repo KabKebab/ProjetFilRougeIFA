@@ -75,11 +75,11 @@
                         </div>*@
                 </td>
                 <td scope="col">
-                    @using (Html.BeginForm("suprimer", "Competence", FormMethod.Post))
+                    @using (Html.BeginForm("supprimer", "Competence", FormMethod.Post))
                     {
 
 
-                        <input type="text" name="suprimer" id="suprimer" value="@item.id" hidden />
+                        <input type="text" name="supprimer" id="supprimer" value="@item.id" hidden />
                         <button type="submit" class="btn btn-danger glyphicon glyphicon-trash"></button>
 
                     }
