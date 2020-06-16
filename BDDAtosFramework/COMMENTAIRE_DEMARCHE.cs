@@ -11,7 +11,7 @@ namespace BDDAtosFramework
         public int id { get; set; }
 
         [Required]
-        [StringLength(5)]
+        [StringLength(200)]
         public string contenu { get; set; }
 
         public int id_DEMARCHE { get; set; }

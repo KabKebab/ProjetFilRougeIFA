@@ -190,7 +190,6 @@
     <Content Include="Views\Utilisateur\_Script.cshtml" />
     <Content Include="Views\Utilisateur\InsertData.cshtml" />
     <Content Include="Views\Utilisateur\EnregistreEdit.cshtml" />
-    <Content Include="Views\Utilisateur\essaisModal.cshtml" />
     <Content Include="Views\Competence\MenuGauche.cshtml" />
     <Content Include="Views\Competence\TableauCompetences.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
@@ -198,6 +197,7 @@
     <Content Include="Views\Competence\Index.cshtml" />
     <Content Include="Views\Competence\_Script.cshtml" />
     <Content Include="Views\Utilisateur\Recherche.cshtml" />
+    <Content Include="Views\Utilisateur\RechercheFiltre.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -217,7 +217,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BDDAtosFramework\BDDAtosFramework.csproj">
-      <Project>{f123bd41-4df3-43f5-8764-04d4d4c39584}</Project>
+      <Project>{ac95a9cb-d75a-42b4-b251-45079dbccbce}</Project>
       <Name>BDDAtosFramework</Name>
     </ProjectReference>
     <ProjectReference Include="..\ModelAtosFramework\ModelAtosFramework.csproj">

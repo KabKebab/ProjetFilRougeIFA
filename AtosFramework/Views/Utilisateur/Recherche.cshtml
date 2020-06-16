@@ -1,44 +1,32 @@
 ﻿
 @{
-    ViewBag.Title = "RechercheFiltre";
+    ViewBag.Title = "Recherche";
 }
     <div id="Recherche">
         <h2>Recherche</h2>
-        <input id="searchelment0" class="form-control rechercheBoutton" type="text" placeholder="Recherche par ID">
-        <input id="searchelment1" class="form-control rechercheBoutton" type="text" placeholder="Recherche par nom">
-        <input id="searchelment2" class="form-control rechercheBoutton" type="text" placeholder="Recherche par prenom">
-        <input id="searchelment3" class="form-control rechercheBoutton" type="text" placeholder="Recherche par nomDeCompte">
-        <input id="searchelment4" class="form-control rechercheBoutton" type="text" placeholder="Recherche par Role">
+
+        <label for="exampleFormControlInput1">Nom</label>
+        <input id="nomRecherche" class="form-control rechercheBoutton" type="text" placeholder="Recherche par nom">
+        <label for="exampleFormControlInput1">Prenom</label>
+        <input id="prenomRecherche" class="form-control rechercheBoutton" type="text" placeholder="Recherche par prenom">
+        <label for="exampleFormControlInput1">Nom de compte</label>
+        <input id="nomDeCompteRecherche" class="form-control rechercheBoutton" type="text" placeholder="Recherche par nomDeCompte">
+        <label for="exampleFormControlInput1">Role</label>
+        <input id="id_ROLERecherche" class="form-control rechercheBoutton" type="text" placeholder="Recherche par Role">
         <button id="SubmitBouttonRecherche" class="btn btn-success">Rechercher</button>
-</div>
-        <script>
+    </div>
+    <script>
 
  $(function () {
         $('#SubmitBouttonRecherche').on('click', function () {
 
-            var data = JSON.stringify(GetUsersearcht());
+            $('#tableauResultat').load('/Utilisateur/RechercheFiltre/', {
+                "nomRecherche": $('#nomRecherche').val(),
+                "prenomRecherche": $('#prenomRecherche').val(),
+                "nomDeCompteRecherche": $('#nomDeCompteRecherche').val(),
+                "id_ROLERecherche": $('#id_ROLERecherche').val()
 
-            $.ajax({
-                type: 'POST',
-                url: '@Url.Action("RechercheFiltre", "Utilisateur")',
-                contentType: "application/json;",
-                data: data,
-                success: function (response) {
-
-                    $('#tableauResultat').load('/Utilisateur/RechercheFiltre');
-                    alert("reussi");
-
-
-                },
-                error: function (response) {
-
-
-                    alert("false");
-
-                }
             });
-
-
         });
 
     });
@@ -51,8 +39,12 @@
 
         var jsonObject = {
 
-            "nom":"DALUZ"
-
+            "ididentification": $('#searchelment0').val(),
+            "nom": $('#searchelment1').val(),
+            "prenom": $('#searchelment2').val(),
+            "nomDeCompte": $('#searchelment3').val(),
+            "motDePasse": $('#searchelment4').val(),
+            "id_ROLE": $('#searchelment5').val()
 
 
         };
@@ -61,4 +53,9 @@
 
 
 
-        </script>
+
+
+      
+
+
+    </script>

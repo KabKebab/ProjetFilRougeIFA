@@ -15,6 +15,7 @@ namespace AtosFramework.Controllers
     public class UtilisateurController : Controller
     {
 
+        List<UTILISATEUR> UtilisateurSearch { get; set; }
 
         [AuthorizeCustom (Roles = "1")]
         // GET: Utilisateur
@@ -28,22 +29,51 @@ namespace AtosFramework.Controllers
 
         }
 
-        public ActionResult RechercheFiltre(SearchUser searchuser)
+        public ActionResult RechercheFiltre(string nomRecherche, string prenomRecherche, string nomDeCompteRecherche, string id_ROLERecherche)
         {
 
 
-           
-            UserModel userModel = new UserModel();
-            userModel.nom = searchuser.nom;
-            Console.WriteLine(searchuser.nom);
+            Console.WriteLine(nomRecherche);
 
-            IUserServices Utilisateur = new UserServices();
-            var vm = Utilisateur.SearchMultiple(userModel);
+            using (var c = new Context())
+            {
+                var listUTILISATEUR = c.UTILISATEUR.Select(u => new UserModel() { id = u.id, nomDeCompte = u.nomDeCompte, prenom = u.prenom, nom = u.nom, id_ROLE = u.id_ROLE, motDePasse = u.motDePasse }).AsQueryable();
+
+                if (!string.IsNullOrEmpty(nomRecherche))
+                {
+                    // 5 personnes
+                    listUTILISATEUR = listUTILISATEUR.Where(u => u.nom.Contains(nomRecherche)).AsQueryable();
+                }
+
+                if (!string.IsNullOrEmpty(prenomRecherche))
+                {
+                    // 5 personnes
+
+
+                    listUTILISATEUR = listUTILISATEUR.Where(u => u.prenom.Contains(prenomRecherche)).AsQueryable();
+                }
+                if (!string.IsNullOrEmpty(nomDeCompteRecherche))
+                {
+                    // 5 personnes
+                   listUTILISATEUR = listUTILISATEUR.Where(u => u.nomDeCompte.Contains(nomDeCompteRecherche)).AsQueryable();
+                }
+                if (id_ROLERecherche != "")
+               {
+                    // 5 personnes
+                   listUTILISATEUR = listUTILISATEUR.Where(u => u.id_ROLE.ToString().Contains(id_ROLERecherche)).AsQueryable();
+                }
 
 
 
+                var resultat = listUTILISATEUR.ToList();
 
-         return  PartialView("RechercheFiltre", vm);
+                return PartialView("RechercheFiltre", resultat);
+            }
+
+            
+
+
+
 
 
         }
@@ -199,6 +229,24 @@ namespace AtosFramework.Controllers
             return View();
         }
 
+        public ActionResult Recherche(UpdateUser UpdateUser)
+        {
 
+
+
+
+          
+            
+            using (Context c = new Context())
+            {
+                var ListRecherche = c.UTILISATEUR.Where(u => u.nom == UpdateUser.nom).ToList() ;
+                UtilisateurSearch = new List<UTILISATEUR>(ListRecherche);
+            }
+
+
+            return View();
+
+
+        }
     }
 }

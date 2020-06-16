@@ -1,4 +1,4 @@
-namespace BDDAtosFramework
+﻿namespace BDDAtosFramework
 {
     using System;
     using System.Data.Entity;
@@ -30,9 +30,17 @@ namespace BDDAtosFramework
         public virtual DbSet<PROPOSITION> PROPOSITION { get; set; }
         public virtual DbSet<ROLE> ROLE { get; set; }
         public virtual DbSet<SOUS_TRAITANT> SOUS_TRAITANT { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<TYPE_COMPETENCE> TYPE_COMPETENCE { get; set; }
         public virtual DbSet<UTILISATEUR> UTILISATEUR { get; set; }
+        public virtual DbSet<V_AGENCE_COLLAB> V_AGENCE_COLLAB { get; set; }
+        public virtual DbSet<V_CLIENT_CONTACT_CLIENT> V_CLIENT_CONTACT_CLIENT { get; set; }
+        public virtual DbSet<V_CLIENT_DEMARCHE> V_CLIENT_DEMARCHE { get; set; }
+        public virtual DbSet<V_COLLAB_CONTACT_STT> V_COLLAB_CONTACT_STT { get; set; }
+        public virtual DbSet<V_COMPETENCE_EXPERIENCE_COLLAB> V_COMPETENCE_EXPERIENCE_COLLAB { get; set; }
+        public virtual DbSet<V_DETAILS_BESOIN> V_DETAILS_BESOIN { get; set; }
+        public virtual DbSet<V_DETAILS_PROPOSITION> V_DETAILS_PROPOSITION { get; set; }
+        public virtual DbSet<V_INTITULE_COMPETENCE> V_INTITULE_COMPETENCE { get; set; }
+        public virtual DbSet<V_ROLE_UTILISATEUR> V_ROLE_UTILISATEUR { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -92,6 +100,10 @@ namespace BDDAtosFramework
 
             modelBuilder.Entity<COLLABORATEUR>()
                 .Property(e => e.prenom)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<COLLABORATEUR>()
+                .Property(e => e.cv)
                 .IsUnicode(false);
 
             modelBuilder.Entity<COLLABORATEUR>()
@@ -174,10 +186,6 @@ namespace BDDAtosFramework
                 .IsUnicode(false);
 
             modelBuilder.Entity<CONTACT_STT>()
-                .Property(e => e.cv)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<CONTACT_STT>()
                 .Property(e => e.societe)
                 .IsUnicode(false);
 
@@ -206,6 +214,10 @@ namespace BDDAtosFramework
                 .IsUnicode(false);
 
             modelBuilder.Entity<DEMARCHE>()
+                .Property(e => e.prenomDemarcheur)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<DEMARCHE>()
                 .Property(e => e.action)
                 .IsUnicode(false);
 
@@ -218,12 +230,6 @@ namespace BDDAtosFramework
             modelBuilder.Entity<EXPERIENCE>()
                 .Property(e => e.intitule)
                 .IsUnicode(false);
-
-            modelBuilder.Entity<EXPERIENCE>()
-                .HasMany(e => e.COMPETENCE)
-                .WithRequired(e => e.EXPERIENCE)
-                .HasForeignKey(e => e.id_EXPERIENCE)
-                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<EXPERIENCE>()
                 .HasMany(e => e.disposer)
@@ -245,9 +251,13 @@ namespace BDDAtosFramework
                 .Property(e => e.prenom)
                 .IsUnicode(false);
 
+            modelBuilder.Entity<INTERNE>()
+                .Property(e => e.cv)
+                .IsUnicode(false);
+
             modelBuilder.Entity<PROPOSITION>()
                 .Property(e => e.tarif)
-                .HasPrecision(19, 4);
+                .HasPrecision(10, 2);
 
             modelBuilder.Entity<PROPOSITION>()
                 .Property(e => e.etat)
@@ -281,6 +291,10 @@ namespace BDDAtosFramework
 
             modelBuilder.Entity<SOUS_TRAITANT>()
                 .Property(e => e.prenom)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<SOUS_TRAITANT>()
+                .Property(e => e.cv)
                 .IsUnicode(false);
 
             modelBuilder.Entity<SOUS_TRAITANT>()
@@ -320,6 +334,186 @@ namespace BDDAtosFramework
                 .WithRequired(e => e.UTILISATEUR)
                 .HasForeignKey(e => e.id_UTILISATEUR)
                 .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<V_AGENCE_COLLAB>()
+                .Property(e => e.Nom)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_AGENCE_COLLAB>()
+                .Property(e => e.Prénom)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_AGENCE_COLLAB>()
+                .Property(e => e.CV)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_AGENCE_COLLAB>()
+                .Property(e => e.Agence)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_CLIENT_CONTACT_CLIENT>()
+                .Property(e => e.Nom_du_contact)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_CLIENT_CONTACT_CLIENT>()
+                .Property(e => e.Prénom_du_contact)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_CLIENT_CONTACT_CLIENT>()
+                .Property(e => e.Poste)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_CLIENT_CONTACT_CLIENT>()
+                .Property(e => e.Courriel)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_CLIENT_CONTACT_CLIENT>()
+                .Property(e => e.Téléphone_fixe)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_CLIENT_CONTACT_CLIENT>()
+                .Property(e => e.Téléphone_personnel)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_CLIENT_CONTACT_CLIENT>()
+                .Property(e => e.Fax)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_CLIENT_CONTACT_CLIENT>()
+                .Property(e => e.Client)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_CLIENT_DEMARCHE>()
+                .Property(e => e.Nom_du_démarcheur)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_CLIENT_DEMARCHE>()
+                .Property(e => e.Prénom_du_démarcheur)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_CLIENT_DEMARCHE>()
+                .Property(e => e.Action)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_CLIENT_DEMARCHE>()
+                .Property(e => e.Client)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_COLLAB_CONTACT_STT>()
+                .Property(e => e.Nom_du_contact)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_COLLAB_CONTACT_STT>()
+                .Property(e => e.Prénom_du_contact)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_COLLAB_CONTACT_STT>()
+                .Property(e => e.Société)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_COLLAB_CONTACT_STT>()
+                .Property(e => e.Poste)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_COLLAB_CONTACT_STT>()
+                .Property(e => e.Courriel)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_COLLAB_CONTACT_STT>()
+                .Property(e => e.Téléphone_fixe)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_COLLAB_CONTACT_STT>()
+                .Property(e => e.Téléphone_personnel)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_COLLAB_CONTACT_STT>()
+                .Property(e => e.Fax)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_COLLAB_CONTACT_STT>()
+                .Property(e => e.Nom_du_collaborateur)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_COLLAB_CONTACT_STT>()
+                .Property(e => e.Prénom_du_collaborateur)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_COMPETENCE_EXPERIENCE_COLLAB>()
+                .Property(e => e.Nom)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_COMPETENCE_EXPERIENCE_COLLAB>()
+                .Property(e => e.Prénom)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_COMPETENCE_EXPERIENCE_COLLAB>()
+                .Property(e => e.Compétence)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_COMPETENCE_EXPERIENCE_COLLAB>()
+                .Property(e => e.Expérience)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_DETAILS_BESOIN>()
+                .Property(e => e.État)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_DETAILS_BESOIN>()
+                .Property(e => e.Client)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_DETAILS_BESOIN>()
+                .Property(e => e.Compétence)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_DETAILS_BESOIN>()
+                .Property(e => e.Expérience)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_DETAILS_PROPOSITION>()
+                .Property(e => e.Tarif)
+                .HasPrecision(10, 2);
+
+            modelBuilder.Entity<V_DETAILS_PROPOSITION>()
+                .Property(e => e.État)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_DETAILS_PROPOSITION>()
+                .Property(e => e.Nom_du_collaborateur)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_DETAILS_PROPOSITION>()
+                .Property(e => e.Prénom_du_collaborateur)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_INTITULE_COMPETENCE>()
+                .Property(e => e.Intitulé)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_INTITULE_COMPETENCE>()
+                .Property(e => e.Type)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_ROLE_UTILISATEUR>()
+                .Property(e => e.Nom)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_ROLE_UTILISATEUR>()
+                .Property(e => e.Prénom)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_ROLE_UTILISATEUR>()
+                .Property(e => e.Nom_de_compte)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_ROLE_UTILISATEUR>()
+                .Property(e => e.Mot_de_passe)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<V_ROLE_UTILISATEUR>()
+                .Property(e => e.intitule)
+                .IsUnicode(false);
         }
     }
 }

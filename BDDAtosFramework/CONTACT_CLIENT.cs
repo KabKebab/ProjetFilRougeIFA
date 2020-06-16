@@ -35,7 +35,7 @@ namespace BDDAtosFramework
         public string tel_perso { get; set; }
 
         [Required]
-        [StringLength(50)]
+        [StringLength(10)]
         public string fax { get; set; }
 
         public int id_CLIENT { get; set; }

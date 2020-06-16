@@ -11,16 +11,12 @@ namespace BDDAtosFramework
         public int id { get; set; }
 
         [Required]
-        [StringLength(5)]
+        [StringLength(50)]
         public string nom { get; set; }
 
         [Required]
         [StringLength(50)]
         public string prenom { get; set; }
-
-        [Required]
-        [StringLength(50)]
-        public string cv { get; set; }
 
         [Required]
         [StringLength(50)]
@@ -35,7 +31,7 @@ namespace BDDAtosFramework
         public string courriel { get; set; }
 
         [Required]
-        [StringLength(50)]
+        [StringLength(10)]
         public string tel_fixe { get; set; }
 
         [Required]

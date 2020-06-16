@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F123BD41-4DF3-43F5-8764-04D4D4C39584}</ProjectGuid>
+    <ProjectGuid>{AC95A9CB-D75A-42B4-B251-45079DBCCBCE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BDDAtosFramework</RootNamespace>
@@ -71,9 +71,17 @@
     <Compile Include="PROPOSITION.cs" />
     <Compile Include="ROLE.cs" />
     <Compile Include="SOUS_TRAITANT.cs" />
-    <Compile Include="sysdiagrams.cs" />
     <Compile Include="TYPE_COMPETENCE.cs" />
     <Compile Include="UTILISATEUR.cs" />
+    <Compile Include="V_AGENCE_COLLAB.cs" />
+    <Compile Include="V_CLIENT_CONTACT_CLIENT.cs" />
+    <Compile Include="V_CLIENT_DEMARCHE.cs" />
+    <Compile Include="V_COLLAB_CONTACT_STT.cs" />
+    <Compile Include="V_COMPETENCE_EXPERIENCE_COLLAB.cs" />
+    <Compile Include="V_DETAILS_BESOIN.cs" />
+    <Compile Include="V_DETAILS_PROPOSITION.cs" />
+    <Compile Include="V_INTITULE_COMPETENCE.cs" />
+    <Compile Include="V_ROLE_UTILISATEUR.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -18,19 +18,19 @@ namespace BDDAtosFramework
         public int id { get; set; }
 
         [Required]
-        [StringLength(10)]
+        [StringLength(50)]
         public string nom { get; set; }
 
         [Required]
-        [StringLength(10)]
+        [StringLength(50)]
         public string prenom { get; set; }
 
         [Required]
-        [StringLength(10)]
+        [StringLength(50)]
         public string nomDeCompte { get; set; }
 
         [Required]
-        [StringLength(10)]
+        [StringLength(50)]
         public string motDePasse { get; set; }
 
         public int id_ROLE { get; set; }

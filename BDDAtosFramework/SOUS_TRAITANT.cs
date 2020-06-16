@@ -25,6 +25,10 @@ namespace BDDAtosFramework
         [StringLength(50)]
         public string prenom { get; set; }
 
+        [Required]
+        [StringLength(200)]
+        public string cv { get; set; }
+
         public double tauxBench { get; set; }
 
         public virtual COLLABORATEUR COLLABORATEUR { get; set; }

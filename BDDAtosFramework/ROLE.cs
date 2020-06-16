@@ -18,7 +18,7 @@ namespace BDDAtosFramework
         public int id { get; set; }
 
         [Required]
-        [StringLength(10)]
+        [StringLength(50)]
         public string intitule { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

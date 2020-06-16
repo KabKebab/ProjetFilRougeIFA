@@ -24,10 +24,6 @@ namespace BDDAtosFramework
 
         public int id_TYPE_COMPETENCE { get; set; }
 
-        public int id_EXPERIENCE { get; set; }
-
-        public virtual EXPERIENCE EXPERIENCE { get; set; }
-
         public virtual TYPE_COMPETENCE TYPE_COMPETENCE { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

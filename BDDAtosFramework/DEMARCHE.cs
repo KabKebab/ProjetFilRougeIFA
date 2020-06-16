@@ -21,10 +21,14 @@ namespace BDDAtosFramework
         [StringLength(50)]
         public string nomDemarcheur { get; set; }
 
+        [Required]
+        [StringLength(50)]
+        public string prenomDemarcheur { get; set; }
+
         public DateTime date { get; set; }
 
         [Required]
-        [StringLength(10)]
+        [StringLength(200)]
         public string action { get; set; }
 
         public int id_CLIENT { get; set; }

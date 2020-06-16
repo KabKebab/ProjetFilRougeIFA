@@ -186,11 +186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA2\\ModelAtosFramework\\ModelAtosFramework.csproj",
+      "projectUniqueName": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj",
       "projectName": "ModelAtosFramework",
-      "projectPath": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA2\\ModelAtosFramework\\ModelAtosFramework.csproj",
+      "projectPath": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj",
       "packagesPath": "C:\\Users\\Utilisateur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA2\\ModelAtosFramework\\obj\\",
+      "outputPath": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

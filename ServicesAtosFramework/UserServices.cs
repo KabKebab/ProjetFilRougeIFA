@@ -81,18 +81,37 @@ namespace ServicesAtosFramework
 
 
 
-        public List<UserModel> SearchMultiple(UserModel user)
+        public List<UserModel> SearchMultiple(UserModel ObjetDrefenrenceDeLaRecherche)
         {
-            using (var dada = new Context())
+            using (var RechercheParFiltre = new Context())
             {
-                var listUTILISATEUR = dada.UTILISATEUR.Select(u => new UserModel() { id = u.id, nomDeCompte = u.nomDeCompte, prenom = u.prenom, nom = u.nom, id_ROLE = u.id_ROLE, motDePasse = u.motDePasse }).Where((a) => a.nom == user.nom ).AsQueryable();
-                var resultat = listUTILISATEUR.ToList();
+                var listUTILISATEUR = RechercheParFiltre.UTILISATEUR.Select(u => new UserModel() { id = u.id, nomDeCompte = u.nomDeCompte, prenom = u.prenom, nom = u.nom, id_ROLE = u.id_ROLE, motDePasse = u.motDePasse }).AsQueryable();
 
-                return resultat;
+                if (!string.IsNullOrEmpty(ObjetDrefenrenceDeLaRecherche.nom))
+                {
+                    // 5 personnes
+                    listUTILISATEUR = listUTILISATEUR.Where(u => u.nom.Contains(ObjetDrefenrenceDeLaRecherche.nom)).AsQueryable();
+                }
+                if (!string.IsNullOrEmpty(ObjetDrefenrenceDeLaRecherche.prenom))
+                {
+                    // 5 personnes
+                    listUTILISATEUR = listUTILISATEUR.Where(u => u.prenom.Contains(ObjetDrefenrenceDeLaRecherche.prenom)).AsQueryable();
+                }
+                if (!string.IsNullOrEmpty(ObjetDrefenrenceDeLaRecherche.nomDeCompte))
+                {
+                    // 5 personnes
+                    listUTILISATEUR = listUTILISATEUR.Where(u => u.nomDeCompte.Contains(ObjetDrefenrenceDeLaRecherche.nomDeCompte)).AsQueryable();
+                }
+                if (ObjetDrefenrenceDeLaRecherche.id_ROLE != 0)
+                {
+                    // 5 personnes
+                    listUTILISATEUR = listUTILISATEUR.Where(u => u.id_ROLE == ObjetDrefenrenceDeLaRecherche.id_ROLE).AsQueryable();
+                }
+
+                return listUTILISATEUR.ToList();
+
             }
-
         }
-
 
         public bool UserExist(UserModel utilisateur)
         {

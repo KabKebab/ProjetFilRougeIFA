@@ -22,11 +22,10 @@ namespace BDDAtosFramework
 
         public DateTime dateEcheance { get; set; }
 
-        [Column(TypeName = "money")]
         public decimal tarif { get; set; }
 
         [Required]
-        [StringLength(10)]
+        [StringLength(50)]
         public string etat { get; set; }
 
         public bool satisfait { get; set; }

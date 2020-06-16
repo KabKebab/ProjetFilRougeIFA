@@ -262,11 +262,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA2\\ServicesAtosFramework\\ServicesAtosFramework.csproj",
+      "projectUniqueName": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\ServicesAtosFramework.csproj",
       "projectName": "ServicesAtosFramework",
-      "projectPath": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA2\\ServicesAtosFramework\\ServicesAtosFramework.csproj",
+      "projectPath": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\ServicesAtosFramework.csproj",
       "packagesPath": "C:\\Users\\Utilisateur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA2\\ServicesAtosFramework\\obj\\",
+      "outputPath": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\ServicesAtosFramework\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -286,11 +286,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA2\\BDDAtosFramework\\BDDAtosFramework.csproj": {
-              "projectPath": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA2\\BDDAtosFramework\\BDDAtosFramework.csproj"
+            "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj": {
+              "projectPath": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\BDDAtosFramework\\BDDAtosFramework.csproj"
             },
-            "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA2\\ModelAtosFramework\\ModelAtosFramework.csproj": {
-              "projectPath": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA2\\ModelAtosFramework\\ModelAtosFramework.csproj"
+            "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj": {
+              "projectPath": "C:\\Users\\Utilisateur\\Source\\Repos\\ProjetFilRougeIFA\\ModelAtosFramework\\ModelAtosFramework.csproj"
             }
           }
         }

@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModelAtosFramework", "Model
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServicesAtosFramework", "ServicesAtosFramework\ServicesAtosFramework.csproj", "{A2625011-F08B-4B40-A94C-420F2394D7A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDDAtosFramework", "BDDAtosFramework\BDDAtosFramework.csproj", "{F123BD41-4DF3-43F5-8764-04D4D4C39584}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDDAtosFramework", "BDDAtosFramework\BDDAtosFramework.csproj", "{AC95A9CB-D75A-42B4-B251-45079DBCCBCE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{A2625011-F08B-4B40-A94C-420F2394D7A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2625011-F08B-4B40-A94C-420F2394D7A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2625011-F08B-4B40-A94C-420F2394D7A7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F123BD41-4DF3-43F5-8764-04D4D4C39584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F123BD41-4DF3-43F5-8764-04D4D4C39584}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F123BD41-4DF3-43F5-8764-04D4D4C39584}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F123BD41-4DF3-43F5-8764-04D4D4C39584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC95A9CB-D75A-42B4-B251-45079DBCCBCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC95A9CB-D75A-42B4-B251-45079DBCCBCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC95A9CB-D75A-42B4-B251-45079DBCCBCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC95A9CB-D75A-42B4-B251-45079DBCCBCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

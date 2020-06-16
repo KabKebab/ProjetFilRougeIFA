@@ -12,7 +12,6 @@ namespace BDDAtosFramework
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public EXPERIENCE()
         {
-            COMPETENCE = new HashSet<COMPETENCE>();
             disposer = new HashSet<disposer>();
             necessiter = new HashSet<necessiter>();
         }
@@ -22,9 +21,6 @@ namespace BDDAtosFramework
         [Required]
         [StringLength(50)]
         public string intitule { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<COMPETENCE> COMPETENCE { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<disposer> disposer { get; set; }

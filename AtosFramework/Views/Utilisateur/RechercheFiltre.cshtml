@@ -9,6 +9,7 @@
 @model List<ModelAtosFramework.UserModel>
 
 
+
 <table id='thisTable' class="table  table-striped ">
     <thead class="thead-dark">
         <tr>
@@ -19,8 +20,8 @@
             <th scope="col">Compte</th>
             <th scope="col">Role</th>
             <th scope="col">Mot de passe</th>
-            <th scope="col">Edit</th>
-            <th scope="col">Suprimer</th>
+            <th scope="col">Modifier</th>
+            <th scope="col">Supprimer</th>
         </tr>
     </thead>
 
@@ -37,7 +38,7 @@
                 <td scope="col">@item.nomDeCompte</td>
                 <td scope="col">@item.id_ROLE</td>
                 <td scope="col"><span type="password">@item.motDePasse</span></td>
-                <td scope="col ">
+                <td scope="col">
 
                     <button type="button" class="btn btn-primary glyphicon glyphicon-cog" data-toggle="modal" data-target="#modal">
                     </button>
@@ -133,8 +134,6 @@
         </div>
     </div>
 </div>
-
-
 
 <script>
             var memoJson = [];
