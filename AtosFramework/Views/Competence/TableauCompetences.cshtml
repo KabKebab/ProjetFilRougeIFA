@@ -27,66 +27,35 @@
 
         @foreach (var item in Model)
         {
-            <tr class="altrenance">
-                <td scope="col">@item.id</td>
-                <td scope="col">@item.intitule</td>
-                <td scope="col">@item.id_TYPE_COMPETENCE</td>
+        <tr class="altrenance">
+            <td scope="col">@item.id</td>
+            <td scope="col">@item.intitule</td>
+            <td scope="col">@item.id_TYPE_COMPETENCE</td>
+            
 
 
-                <td scope="col">
+            <td scope="col">
 
-                    <button type="button" class="btn btn-primary glyphicon glyphicon-cog" data-toggle="modal" data-target="#modal">
-                    </button>
-
-                    <!-- Modal -->
-                    @*<div class="modal " id="modal_@item.id" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-
-                                    <div class="modal-body">
-
-                                            <input type="text" class="form-control" id="identification_@item.id" name="identification" placeholder="Nom" value="@item.id" required>
-                                            <label for="exampleFormControlInput1">Nom</label>
-                                            <input type="text" class="form-control" id="nom_@item.id" name="nom" placeholder="Nom" value="@item.nom" required>
-                                            <label for="exampleFormControlInput1">Prenom</label>
-                                            <input type="text" class="form-control" id="prenom_@item.id" name="prenom" placeholder="Prenom" value="@item.prenom" required>
-                                            <label for="exampleFormControlInput1">nomDeCompte</label>
-                                            <input type="text" class="form-control" id="nomDeCompte_@item.id" name="nomDeCompte" placeholder="nomDeCompte" value="@item.nomDeCompte" required>
-                                            <label for="exampleFormControlSelect1">Role</label>
-                                            <select class="form-control" name="id_ROLE" id="id_ROLE_@item.id" value="@item.id_ROLE" required>
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-
-                                            </select>
-                                            <label for="exampleFormControlInput1">Password</label>
-                                            <input type="password" class="form-control" name="motDePasse" id="motDePasse_@item.id" value="@item.motDePasse" placeholder="ceci est le mot de passe" required>
-                                            <button class="btn btn-success  " onclick="idincruste('identification_@item.id', 'nom_@item.id', 'prenom_@item.id' , 'nomDeCompte_@item.id','motDePasse_@item.id','id_ROLE_@item.id'  )" type="submit" value=" Sauvegarder">Sauvegarder</button>
+                <button type="button" class="btn btn-primary glyphicon glyphicon-cog" data-toggle="modal" data-target="#modal">
+                    <img src="~/Images/cogIcone.png" width="33%" height="33%" />
+                </button>
 
 
+            </td>
+            <td scope="col">
+                @using (Html.BeginForm("supprimer", "Competence", FormMethod.Post))
+                {
 
 
+                    <input type="text" name="supprimer" id="supprimer" value="@item.id" hidden />
+                    <button type="submit" class="btn btn-danger glyphicon glyphicon-trash"><img src="~/Images/poubelle.svg" width="26%" height="26%" /></button>
 
-                                        </div>
-
-
-                                </div>
-                            </div>
-                        </div>*@
-                </td>
-                <td scope="col">
-                    @using (Html.BeginForm("supprimer", "Competence", FormMethod.Post))
-                    {
+                }
+            </td>
+            
 
 
-                        <input type="text" name="supprimer" id="supprimer" value="@item.id" hidden />
-                        <button type="submit" class="btn btn-danger glyphicon glyphicon-trash"></button>
-
-                    }
-                </td>
-
-
-            </tr>
+        </tr>
 
         }
 
@@ -119,6 +88,9 @@
         </div>
     </div>
 </div>
+
+
+
 
 <script>
             var memoJson = [];

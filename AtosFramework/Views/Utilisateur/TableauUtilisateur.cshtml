@@ -40,7 +40,10 @@
                         <td scope="col" type="password">@item.motDePasse</td>
                         <td scope="col">
 
-                            <button type="button" class="btn btn-primary glyphicon glyphicon-cog" data-toggle="modal" data-target="#modal">
+                            <button type="button" class="btn btn-primary glyphicon glyphicon-trash" data-toggle="modal" data-target="#modal">
+                                <img src="~/Images/cogIcone.png" width="33%" height="33%" />
+                              
+
                             </button>
 
                            
@@ -51,7 +54,7 @@
 
 
                                 <input type="text" name="suprimer" id="suprimer" value="@item.id" hidden />
-                                <button type="submit " class="btn btn-danger glyphicon glyphicon-trash"></button>
+                                <button type="submit " class="btn btn-danger glyphicon glyphicon-trash"><img src="~/Images/poubelle.svg" width="26%" height="26%" /></button>
 
                             }
                         </td>
@@ -81,9 +84,9 @@
                         <input type="text" class="form-control" id="nomDeCompte" name="nomDeCompte" placeholder="nomDeCompte" value="" required>
                         <label for="exampleFormControlSelect1">Role</label>
                         <select class="form-control" name="id_ROLE" id="id_ROLE" value="" required>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
+                            <option value="1">Administrateur</option>
+                            <option value="2">Utilisateur</optionvalue="1">
+                            <option value="3">Commercial</option>
 
                         </select>
                         <label for="exampleFormControlInput1">Password</label>

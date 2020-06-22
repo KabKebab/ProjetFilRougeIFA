@@ -5,7 +5,7 @@ $(function () {
 });
 
 $('#TableauCompetences').load('/Competence/TableauCompetences');
-
+$('#TableauClient').load('/Client/TableauClient');
 
 $("#tomme").click(function () {
     $("#result").load("Utilisateur/index", function () {

@@ -1,0 +1,162 @@
+﻿
+@{
+    ViewBag.Title = "TableauClient";
+}
+
+
+
+<table id='thisTable' class="table  table-striped ">
+    <thead class="thead-dark" style="color:white">
+        <tr>
+
+            <th scope="col">ID</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Adresse</th>
+
+            <th scope="col">Actif</th>
+            <th scope="col">plus</th>
+            <th scope="col">Modifier</th>
+            <th scope="col">Supprimer</th>
+
+        </tr>
+    </thead>
+
+
+
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+        <tr class="altrenance">
+            <td scope="col">@item.id</td>
+            <td scope="col">@item.intitule</td>
+            <td scope="col">@item.adresseSiege</td>
+            <td scope="col">@item.Actif</td>
+            <td scope="col">
+
+                <button type="button" class="btn btn-success " data-toggle="modal" data-target="#modalEditContact">
+                    <img src="~/Images/flecheverslebas.png" width="33%" height="33%" />
+                </button>
+
+
+            </td>
+            <td>
+                <button type="submit " class="btn btn-primary "><img src="~/Images/cogIcone.png" width="26%" height="26%" /></button>
+
+
+
+            </td>
+            <td>
+
+                <button type="submit " class="btn btn-danger glyphicon glyphicon-trash"><img src="~/Images/poubelle.svg" width="26%" height="26%" /></button>
+
+
+            </td>
+        </tr>
+
+        }
+
+
+    </tbody>
+</table>
+
+
+<div class="modal " id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="modal-body">
+
+                <input type="text" class="form-control" id="identification" name="identification" placeholder="identification" value="" required>
+                <label for="exampleFormControlInput1">	Intitulé	</label>
+                <input type="text" class="form-control" id="intitule" name="Intitule" placeholder="Intitule" value="" required>
+                <label for="exampleFormControlInput1">Type</label>
+                <input type="text" class="form-control" id="Type" name="Type" placeholder="Type" value="" required>
+
+                <button id="UserChangeEdit" class="btn btn-success  " type="submit" value=" Sauvegarder">Sauvegarder</button>
+
+
+
+                @* onclick="idincruste()"*@
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal 	" id="modalEditContact"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+    <div class="modal-dialog modal-xl" role="document" >
+        <div class="modal-content">
+
+            <div class="modal-body">
+
+
+                @Html.Partial("FormulaireContact")
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script>
+            var memoJson = [];
+        $("#thisTable tr").click(function () {
+            var myArr = [];
+
+
+            $(this).find("td").each(function (colIndex, c) {
+                myArr[colIndex] = c.innerText;
+
+            });
+            $('#identification').val(myArr[0]);
+            $('#intitule').val(myArr[1]);
+            $('#Type').val(myArr[2]);
+
+        });
+
+
+     $('#UserChangeEdit').on('click', function () {
+
+         var data = JSON.stringify(GetEditCompetence());
+
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("ModifierCompetence", "Competence")',
+                contentType: "application/json;",
+                data: data,
+                success: function (response) {
+
+                    $('#TableauCompetences').load('/Competence/TableauCompetences');
+                    $('.modal').modal('hide');
+                },
+                error: function (response) {
+
+
+                    alert('false');
+                }
+            });
+     });
+
+
+         function GetEditCompetence() {
+
+             //alert($('#identification').val() + ' ' + $('#nom').val() + ' ' + $('#prenom').val()+' ' + $('#nomDeCompte').val() + ' ' + $('#motDePasse').val() + ' ' + $('#id_ROLE').val() );
+             var jsonObject = {
+             "id": $('#identification').val(),
+                 "intitule": $('#intitule').val(),
+                 "id_TYPE_COMPETENCE": $('#Type').val()
+             };
+             return jsonObject;
+         }
+
+
+
+
+</script>

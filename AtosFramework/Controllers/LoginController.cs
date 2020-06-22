@@ -21,6 +21,14 @@ namespace AtosFramework.Controllers
 
     public class LoginController : Controller
     {
+
+        public ActionResult LoginLayout()
+        {
+            return View();
+        }
+
+
+
         // GET: Login
         public ActionResult Index()
         {
@@ -78,6 +86,7 @@ namespace AtosFramework.Controllers
                 return new JsonResult { Data = false, JsonRequestBehavior = JsonRequestBehavior.AllowGet };
 
         }
+
 
     }
 }

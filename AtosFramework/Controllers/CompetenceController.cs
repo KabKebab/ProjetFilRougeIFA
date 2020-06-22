@@ -76,5 +76,11 @@ namespace AtosFramework.Controllers
             return RedirectToAction("Index", "Competence"); ;
         }
 
+        public ActionResult Recherche()
+        {
+
+            return View();
+        }
+
     }
 }
